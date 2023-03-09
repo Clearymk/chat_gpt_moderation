@@ -1,6 +1,5 @@
 import json
 
-import openai
 import os
 from moderation import Moderation
 import requests
@@ -8,7 +7,6 @@ import csv
 
 os.environ['HTTP_PROXY'] = "http://localhost:7890"
 os.environ['HTTPS_PROXY'] = "http://localhost:7890"
-openai.api_key = "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"
 
 requests_header = {
     'Authorization': 'Bearer TOKEN',
